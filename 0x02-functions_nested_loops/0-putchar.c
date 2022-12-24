@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * main - entry point
- * description - print putchar
- * Return: 0
+ * main - Entry point
+ *
+ * Description - print _putchar
+ *
+ * Return: always 0
  */
 int main(void)
 {
