@@ -1,25 +1,28 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_diagsums - Entry point
- * @a: input
- * @size: input
- * Return: Always 0 (Success)
+ * print_diagsums - function to print sum of diagonal
+ * @a: multidimensional array
+ * @size: size of multidimensional array
+ *
+ * Return: None
  */
+
 void print_diagsums(int *a, int size)
 {
-	int sum1, sum2, y;
+	int sum1 = 0, sum2 = 0;
+	int x, y;
 
-	sum1 = 0;
-	sum2 = 0;
-
-	for (y = 0; y < size; y++)
+	for (x = 0; x < size; x++)
 	{
-		sum1 = sum1 + a[y * size + y];
+		y = (x * size) + x;
+		sum1 = sum1 + a[y];
 	}
-	for (y = size - 1; y >= 0; y--)
+	for (x = 1; x <= size; x++)
 	{
-		sum2 += a[y * size + (size - y - 1)];
+		y = (x * size) - x;
+		sum2 = sum2 + a[y];
 	}
 	printf("%d, %d\n", sum1, sum2);
 }

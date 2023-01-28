@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * printi - print int
- * @vprint: the integer
+ * printc - print char
+ * @vprint: the char
  */
-void printi(va_list vprint)
+void printc(va_list vprint)
 {
-	printf("%d", va_arg(vprint, int));
+	printf("%c", va_arg(vprint, int));
 }

@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	int i, j;
 	char *separator = "";
 	va_list vprint;
-	
+
 	types opt[] = { {'c', printc},
 			      {'i', printi},
 			      {'f', print_f},
