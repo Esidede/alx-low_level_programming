@@ -1,5 +1,4 @@
 #include "main.h"
-#include "strlen.c"
 
 /**
  * char *_strcpy - copy str to src
